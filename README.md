@@ -35,7 +35,7 @@ This project is a weather application built with Flask and React. The applicatio
    cd weather-app/server
    ```
 
-2. Create a `.env` file in the root directory
+2. Create a `.env` file in the `server` directory
 
 3. Add your OpenWeatherMap API key to the `.env` file.
    ```plaintext
