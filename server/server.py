@@ -4,10 +4,15 @@ import requests
 from collections import defaultdict, Counter
 from datetime import datetime
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 app = Flask(__name__)
 CORS(app)
 
-API_KEY="efe7dec52fa211e3cc14aed9b4130829"
+API_KEY = os.getenv("API_KEY")
 
 @app.route("/api/current", methods=['GET', 'POST'])
 def get_weather():
