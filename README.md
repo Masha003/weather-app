@@ -35,23 +35,16 @@ This project is a weather application built with Flask and React. The applicatio
    cd weather-app/server
    ```
 
-2. Create a virtual environment:
+2. Create a `.env` file in the root directory
+
+3. Add your OpenWeatherMap API key to the `.env` file.
+   ```plaintext
+   API_KEY=your_api_key_here
+   ```
+4. Install the required Python packages:
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-
-3. Install the required Python packages:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Set up your OpenWeatherMap API key in the `app.py` file:
-
-   ```python
-   API_KEY = "your_openweathermap_api_key"
+   pip install -r requirement.txt
    ```
 
 5. Run the Flask server:
